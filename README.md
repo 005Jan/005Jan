@@ -1,8 +1,8 @@
 <h1 align="center">Hi, I'm Jan 👋</h1>
 
 <p align="center">
-  <b>Systems Technician · ASIX · Barcelona</b><br>
-  Working at NeodataMeat · Building tools with Python, Node.js & automation
+  <b>IT Systems Technician · ASIX Student · Barcelona</b><br>
+  Windows infrastructure & automation at NeodataMeat · building AI-powered tools with Node.js & Python
 </p>
 
 <p align="center">
@@ -15,10 +15,10 @@
 
 ### About me
 
-- IT Systems Technician at **NeodataMeat**, managing Windows infrastructure, Active Directory and process automation with Power Platform
-- Studying **ASIX (Advanced Systems & Networks)** at Salesians Sarrià, Barcelona
-- Passionate about automation, quant trading experiments and building useful tools from scratch
-- Currently working on: **AI assistant bots, ERP integrations & web projects**
+- 🖥️ **IT Systems Technician at NeodataMeat** — managing Windows Server infrastructure, Active Directory and process automation with the Power Platform
+- 🎓 Studying **ASIX (Network Systems Administration)** at Salesians Sarrià, Barcelona
+- 🤖 I design and ship **AI agents, automations and ERP integrations** end to end — from idea to a self-hosted service
+- 📈 Also into quantitative trading experiments and building useful tools from scratch
 
 ---
 
