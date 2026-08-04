@@ -47,6 +47,7 @@
 | Project | Description | Stack |
 |---|---|---|
 | [Assistant Bot](https://github.com/005Jan/Assistant-bot) | Personal Telegram assistant — an AI agent with tool-calling that handles expenses, habits, reminders, health data, news and more from plain-language chat or voice notes | Node.js · Claude (Bedrock) · Groq · SQLite |
+| [HabitForge](https://github.com/005Jan/HabitForge) | Self-hosted habit-tracking PWA — installable, works offline, with real Web Push notifications and a smart reminder system | Node.js · MariaDB · Docker · Web Push |
 | [Polymarket Smart Money Tracker](https://github.com/005Jan/Polymarket-smart-money-tracker) | Quantitative copy-trading bot that tracks profitable wallets on Polymarket prediction markets | Python · Docker · REST APIs |
 | [Portfolio](https://005jan.github.io) | Personal portfolio with multilingual support (CA/ES/EN) | HTML · CSS · JS |
 
