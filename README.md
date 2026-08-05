@@ -46,7 +46,7 @@
 
 | Project | Description | Stack |
 |---|---|---|
-| **Kovia** *(private)* | Multi-user AI assistant platform — a 23-tool agent handling expenses, calendar, habits and reminders from plain language or voice, with per-user data isolation enforced in PostgreSQL (RLS), proactive Web Push and an installable PWA | Next.js · TypeScript · Fastify · Supabase · Claude (Bedrock) |
+| [Kovia](https://github.com/005Jan/Kovia-case-study) | Multi-user AI assistant platform — a 23-tool agent handling expenses, calendar, habits and reminders from plain language or voice, with per-user data isolation enforced in PostgreSQL (RLS), proactive Web Push and an installable PWA | Next.js · TypeScript · Fastify · Supabase · Claude (Bedrock) |
 | [Assistant Bot](https://github.com/005Jan/Assistant-bot) | Personal Telegram assistant — an AI agent with tool-calling that handles expenses, habits, reminders, health data, news and more from plain-language chat or voice notes | Node.js · Claude (Bedrock) · Groq · SQLite |
 | [HabitForge](https://github.com/005Jan/HabitForge) | Self-hosted habit-tracking PWA — installable, works offline, with real Web Push notifications and a smart reminder system | Node.js · MariaDB · Docker · Web Push |
 | [Polymarket Smart Money Tracker](https://github.com/005Jan/Polymarket-smart-money-tracker) | Quantitative copy-trading bot that tracks profitable wallets on Polymarket prediction markets | Python · Docker · REST APIs |
