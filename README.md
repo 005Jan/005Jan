@@ -75,14 +75,6 @@ A multi-user habit tracker installable on mobile and fully functional offline.
 
 `Node.js` `Express` `MariaDB` `Web Push` `Nginx` `Docker`
 
-#### 📈 [Polymarket Smart Money Tracker](https://github.com/005Jan/Polymarket-smart-money-tracker) — quantitative research · *archived*
-A copy-trading system that detects profitable wallets on Polymarket and replicates their trades in **paper trading only**.
-- Wallet discovery + consensus signals, EV/slippage filter, wallet quarantine, fractional Kelly sizing
-- Ran a 10-day live experiment, tested eight parameter changes and **documented why the strategy had no edge**
-  ([findings](https://github.com/005Jan/Polymarket-smart-money-tracker/blob/main/FINDINGS.md)) — archived rather than overfitted
-
-`Python` `Docker` `REST APIs`
-
 #### 🌐 [Portfolio](https://005jan.github.io) — personal site and CV
 Trilingual (CA/ES/EN) single-page portfolio with instant client-side language switching and scrollspy
 navigation — vanilla HTML, CSS and JavaScript, deployed on GitHub Pages.
