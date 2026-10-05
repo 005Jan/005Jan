@@ -53,14 +53,14 @@ A web app and installable PWA where users manage expenses, calendar, habits, rem
 by talking to an **AI agent with 23 tools**, in text or by voice.
 - **Multi-tenant by design:** per-user data isolation enforced in PostgreSQL with **Row-Level Security**
 - Agent loop on **Claude (AWS Bedrock)** with SSE streaming and prompt caching; **Whisper** transcription; receipt-to-expense with vision
-- **4 background workers** for reminders, cron tasks, price alerts and a personalised morning briefing via Web Push
+- **Background workers** for reminders, cron tasks and a personalised morning briefing via Web Push
 - ~7.5k lines of TypeScript, verified end to end, self-hosted on a Raspberry Pi 4 behind Traefik with automatic HTTPS
 
 `Next.js 16` `React 19` `TypeScript` `Fastify` `Supabase` `Claude (Bedrock)` `Docker`
 
 #### 🤖 [Assistant Bot](https://github.com/005Jan/Assistant-bot) — AI assistant on Telegram
 A personal assistant driven by natural language and voice notes: expenses, habits, reminders, recurring tasks,
-portfolio and price alerts, Google Calendar, weather, web search and health data from Garmin.
+Google Calendar, weather, web search and health data from Garmin.
 - Tool-calling agent with **dual-model routing** — Groq (Llama) for fast tasks, Claude for complex reasoning — to keep costs down
 - End-to-end voice: Whisper speech-to-text and Amazon Polly text-to-speech
 - Garmin integration as a separate Python microservice; cron scheduling with croner
