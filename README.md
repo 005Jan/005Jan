@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>IT Systems Technician · ASIX Student · Barcelona</b><br>
-  Windows infrastructure & process automation at NeodataMeat · building self-hosted, AI-powered applications
+  Windows infrastructure & process automation at NeodataMeat · self-hosted infrastructure and applications in my own time
 </p>
 
 <p align="center">
@@ -16,13 +16,13 @@
 ### About me
 
 I'm a systems technician working in a corporate environment, focused on **Windows Server, Active Directory
-and process automation with the Microsoft Power Platform**. Outside work I design, build and self-host
-complete applications — from the data model to deployment — with a particular interest in **AI agents
-with tool-calling**, multi-user systems and practical automation.
+and process automation with the Microsoft Power Platform**. In my own time I run a small self-hosted
+infrastructure on Linux and build complete applications on top of it, from the data model to
+deployment, with a focus on security, backups and keeping things running.
 
-- 🖥️ **Junior Systems Technician at NeodataMeat** — infrastructure, ERP/CRM administration and internal automation
+- 🖥️ **Junior Systems Technician at NeodataMeat**: infrastructure, ERP/CRM administration and internal automation
 - 🎓 Studying the **Higher Degree in ASIX** (Network Systems Administration) at Salesians Sarrià, Barcelona
-- 🤖 Shipping **end-to-end AI products**: agent loops, prompt caching, voice, Web Push, Docker on ARM64
+- 🐧 Running a **self-hosted Linux server**: reverse proxy, VPN, password manager, encrypted backups and monitoring
 - 🔒 Growing in **networking and cybersecurity** (FortiGate 7.6 Operator, ethical hacking)
 - 🌍 Catalan & Spanish (native) · English (professional working)
 
@@ -30,25 +30,35 @@ with tool-calling**, multi-user systems and practical automation.
 
 ### Experience
 
-**Junior Systems Technician** — NeodataMeat · *Mar 2025 – Present*
+**Junior Systems Technician**, NeodataMeat · *Mar 2025 – Present*
 - User, group and GPO administration with Active Directory; Windows Server management and maintenance
 - Process automation with Power Automate; administration of Microsoft Dynamics AX/BC and CRM
 - Virtualised environment management, IT helpdesk and technical support
 
-**Systems Technician (DUAL internship)** — NeodataMeat · *Jun 2024 – Feb 2025*
+**Systems Technician (DUAL internship)**, NeodataMeat · *Jun 2024 – Feb 2025*
 - Incident resolution, hardware configuration and inventory, software deployment and maintenance
 - Technical documentation of internal processes
 
 ### Education
 
-- **CFGS ASIX** — Network Computer Systems Administration · Salesians Sarrià · *in progress*
-- **CFGM SMX** — Microcomputer Systems and Networks · *2023 – 2025*
+- **CFGS ASIX**: Network Computer Systems Administration · Salesians Sarrià · *in progress*
+- **CFGM SMX**: Microcomputer Systems and Networks · *2023 – 2025*
 
 ---
 
 ### Featured Projects
 
-#### 🧠 [Kovia](https://github.com/005Jan/Kovia-case-study) — multi-user AI personal assistant · *case study, private source*
+#### 🖧 HomePi: self-hosted infrastructure · *private repository*
+A Raspberry Pi 4 (ARM64) home server that hosts my projects under my own domain, run like a small production environment.
+- **Traefik** reverse proxy with automatic HTTPS (Let's Encrypt), **WireGuard** VPN for remote access, **Vaultwarden** password manager, Portainer and Watchtower for container management
+- Custom firewall rules in Docker's `DOCKER-USER` chain; public-URL health checks with **Telegram alerts** on failure and recovery
+- **Nightly backups** to an external disk, with secrets encrypted with GPG; backups verified by actually restoring them into throwaway containers
+- Web dashboard and Telegram bot to check status, restart services and **restore backups with two-step confirmation**
+- Pre-commit hooks that block hard-coded secrets before they reach GitHub
+
+`Linux` `Docker` `Traefik` `WireGuard` `Bash` `GPG` `Raspberry Pi`
+
+#### 🧠 [Kovia](https://github.com/005Jan/Kovia-case-study): multi-user AI personal assistant · *case study, private source*
 A web app and installable PWA where users manage expenses, calendar, habits, reminders, nutrition and news
 by talking to an **AI agent with 23 tools**, in text or by voice.
 - **Multi-tenant by design:** per-user data isolation enforced in PostgreSQL with **Row-Level Security**
@@ -58,26 +68,28 @@ by talking to an **AI agent with 23 tools**, in text or by voice.
 
 `Next.js 16` `React 19` `TypeScript` `Fastify` `Supabase` `Claude (Bedrock)` `Docker`
 
-#### 🤖 [Assistant Bot](https://github.com/005Jan/Assistant-bot) — AI assistant on Telegram
-A personal assistant driven by natural language and voice notes: expenses, habits, reminders, recurring tasks,
-Google Calendar, weather, web search and health data from Garmin.
-- Tool-calling agent with **dual-model routing** — Groq (Llama) for fast tasks, Claude for complex reasoning — to keep costs down
-- End-to-end voice: Whisper speech-to-text and Amazon Polly text-to-speech
-- Garmin integration as a separate Python microservice; cron scheduling with croner
+#### 📚 [Segon Cervell](https://github.com/005Jan/segon-cervell): private RAG over my own documents
+A knowledge base over my course notes and study material that answers questions citing the source.
+- **Hybrid search**: vector (sqlite-vec) + keyword (SQLite FTS5), fused with reciprocal rank fusion
+- Ingests PDF, Word and PowerPoint; **OCR** with Tesseract for scans and Claude vision for handwriting, with a confidence filter so gibberish never reaches the index
+- Resumable, idempotent ingestion keyed by content hash; streamed answers with clickable citations; installable PWA
 
-`Node.js` `Telegraf` `Claude (Bedrock)` `Groq` `SQLite` `Python` `Docker`
+`Python` `FastAPI` `sqlite-vec` `AWS Bedrock` `Tesseract` `Docker`
 
-#### 🔥 [HabitForge](https://github.com/005Jan/HabitForge) — self-hosted habit-tracking PWA
+#### 💶 [Ajuts](https://github.com/005Jan/ajuts): public grants finder
+Reads Spain's National Grants Database (BDNS) every day and shows each user the open calls that match their profile and region, sorted by deadline.
+- **Deterministic scoring, no LLM**, so it can run for years without watching a quota; eligibility thresholds extracted from the call's PDF
+- Incremental sync that recovers gaps after downtime; grouped Telegram notifications that never repeat or flood
+- Invitation-only multi-user app: **Argon2id** passwords, CSRF protection, personal data encrypted at rest (Fernet); 85 automated tests
+
+`Python` `FastAPI` `SQLAlchemy` `HTMX` `SQLite` `Docker`
+
+#### 🔥 [HabitForge](https://github.com/005Jan/HabitForge): self-hosted habit-tracking PWA
 A multi-user habit tracker installable on mobile and fully functional offline.
-- Real **Web Push (VAPID)** with a prioritised reminder system: streak at risk, last chance and weekly summary — at most one notification per hour
-- Streaks, milestones, daily/weekly/monthly/yearly stats and an annual heatmap
+- Real **Web Push (VAPID)** with a prioritised reminder system: streak at risk, last chance and weekly summary, at most one notification per hour
 - REST API on Express + MariaDB; frontend in **vanilla JavaScript** with a hand-written service worker; Docker Compose + Traefik
 
 `Node.js` `Express` `MariaDB` `Web Push` `Nginx` `Docker`
-
-#### 🌐 [Portfolio](https://005jan.github.io) — personal site and CV
-Trilingual (CA/ES/EN) single-page portfolio with instant client-side language switching and scrollspy
-navigation — vanilla HTML, CSS and JavaScript, deployed on GitHub Pages.
 
 ---
 
@@ -88,26 +100,27 @@ navigation — vanilla HTML, CSS and JavaScript, deployed on GitHub Pages.
 ![Active Directory](https://img.shields.io/badge/Active_Directory-003087?style=flat&logo=microsoft&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)
 ![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat&logo=traefikproxy&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
 ![Fortinet](https://img.shields.io/badge/FortiGate-EE3124?style=flat&logo=fortinet&logoColor=white)
 
 **Cloud & AI**<br>
 ![AWS](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white)
-![Groq](https://img.shields.io/badge/Groq-F55036?style=flat&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure_(basic)-0078D4?style=flat&logo=microsoftazure&logoColor=white)
 
 **Development**<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![Fastify](https://img.shields.io/badge/Fastify-000000?style=flat&logo=fastify&logoColor=white)
 
 **Databases**<br>
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL_/_Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
@@ -127,14 +140,10 @@ navigation — vanilla HTML, CSS and JavaScript, deployed on GitHub Pages.
 
 ### Courses & Certifications
 
-FortiGate 7.6 Operator · Getting Started in Cybersecurity 3.0 · Technical Introduction to Cybersecurity 3.0 ·
-Introduction to the Threat Landscape 3.0 · Ethical Hacking · Internet of Things (IoT) ·
-Google: AI and Productivity · Microsoft Copilot · ChatGPT Fundamentals
+**Cybersecurity:** FortiGate 7.6 Operator · Getting Started in Cybersecurity 3.0 · Technical Introduction to Cybersecurity 3.0 ·
+Introduction to the Threat Landscape 3.0 (Fortinet) · Ethical Hacking (Salesians Sarrià)<br>
+**Other:** Internet of Things (IoT) · Power BI · Microsoft Copilot · Google: AI and Productivity · ChatGPT Fundamentals (Santander Open Academy)
 
 ---
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=005Jan&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub Stats"/>
-</p>
-
-<p align="center"><i>Open to opportunities in systems administration, infrastructure and automation — feel free to reach out.</i></p>
+<p align="center"><i>Open to opportunities in systems administration, infrastructure and automation. Feel free to reach out.</i></p>
