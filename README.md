@@ -58,7 +58,7 @@ A Raspberry Pi 4 (ARM64) home server that hosts my projects under my own domain,
 
 `Linux` `Docker` `Traefik` `WireGuard` `Bash` `GPG` `Raspberry Pi`
 
-#### 🧠 [Kovia](https://github.com/005Jan/Kovia-case-study): multi-user AI personal assistant · *case study, private source*
+#### 🧠 Kovia: multi-user AI personal assistant · *private repository*
 A web app and installable PWA where users manage expenses, calendar, habits, reminders, nutrition and news
 by talking to an **AI agent with 23 tools**, in text or by voice.
 - **Multi-tenant by design:** per-user data isolation enforced in PostgreSQL with **Row-Level Security**
@@ -67,14 +67,6 @@ by talking to an **AI agent with 23 tools**, in text or by voice.
 - ~7.5k lines of TypeScript, verified end to end, self-hosted on a Raspberry Pi 4 behind Traefik with automatic HTTPS
 
 `Next.js 16` `React 19` `TypeScript` `Fastify` `Supabase` `Claude (Bedrock)` `Docker`
-
-#### 📚 [Segon Cervell](https://github.com/005Jan/segon-cervell): private RAG over my own documents
-A knowledge base over my course notes and study material that answers questions citing the source.
-- **Hybrid search**: vector (sqlite-vec) + keyword (SQLite FTS5), fused with reciprocal rank fusion
-- Ingests PDF, Word and PowerPoint; **OCR** with Tesseract for scans and Claude vision for handwriting, with a confidence filter so gibberish never reaches the index
-- Resumable, idempotent ingestion keyed by content hash; streamed answers with clickable citations; installable PWA
-
-`Python` `FastAPI` `sqlite-vec` `AWS Bedrock` `Tesseract` `Docker`
 
 #### 💶 [Ajuts](https://github.com/005Jan/ajuts): public grants finder
 Reads Spain's National Grants Database (BDNS) every day and shows each user the open calls that match their profile and region, sorted by deadline.
