@@ -48,16 +48,6 @@ deployment, with a focus on security, backups and keeping things running.
 
 ### Featured Projects
 
-#### 🖧 HomePi: self-hosted infrastructure · *private repository*
-A Raspberry Pi 4 (ARM64) home server that hosts my projects under my own domain, run like a small production environment.
-- **Traefik** reverse proxy with automatic HTTPS (Let's Encrypt), **WireGuard** VPN for remote access, **Vaultwarden** password manager, Portainer and Watchtower for container management
-- Custom firewall rules in Docker's `DOCKER-USER` chain; public-URL health checks with **Telegram alerts** on failure and recovery
-- **Nightly backups** to an external disk, with secrets encrypted with GPG; backups verified by actually restoring them into throwaway containers
-- Web dashboard and Telegram bot to check status, restart services and **restore backups with two-step confirmation**
-- Pre-commit hooks that block hard-coded secrets before they reach GitHub
-
-`Linux` `Docker` `Traefik` `WireGuard` `Bash` `GPG` `Raspberry Pi`
-
 #### 🧠 Kovia: multi-user AI personal assistant · *private repository*
 A web app and installable PWA where users manage expenses, calendar, habits, reminders, nutrition and news
 by talking to an **AI agent with 23 tools**, in text or by voice.
@@ -67,14 +57,6 @@ by talking to an **AI agent with 23 tools**, in text or by voice.
 - ~7.5k lines of TypeScript, verified end to end, self-hosted on a Raspberry Pi 4 behind Traefik with automatic HTTPS
 
 `Next.js 16` `React 19` `TypeScript` `Fastify` `Supabase` `Claude (Bedrock)` `Docker`
-
-#### 💶 [Ajuts](https://github.com/005Jan/ajuts): public grants finder
-Reads Spain's National Grants Database (BDNS) every day and shows each user the open calls that match their profile and region, sorted by deadline.
-- **Deterministic scoring, no LLM**, so it can run for years without watching a quota; eligibility thresholds extracted from the call's PDF
-- Incremental sync that recovers gaps after downtime; grouped Telegram notifications that never repeat or flood
-- Invitation-only multi-user app: **Argon2id** passwords, CSRF protection, personal data encrypted at rest (Fernet); 85 automated tests
-
-`Python` `FastAPI` `SQLAlchemy` `HTMX` `SQLite` `Docker`
 
 #### 🔥 [HabitForge](https://github.com/005Jan/HabitForge): self-hosted habit-tracking PWA
 A multi-user habit tracker installable on mobile and fully functional offline.
