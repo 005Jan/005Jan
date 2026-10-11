@@ -58,6 +58,15 @@ by talking to an **AI agent with 23 tools**, in text or by voice.
 
 `Next.js 16` `React 19` `TypeScript` `Fastify` `Supabase` `Claude (Bedrock)` `Docker`
 
+#### 👕 Armari: family wardrobe manager · *private repository · in progress*
+A mobile-first, multi-user web app for managing the family's clothes and, as the next step, recommending outfits.
+- **Sharing as a visibility layer:** items never change owner; separate "can see" / "can use" permissions, and revoking access never deletes other people's data
+- Photo uploads re-encoded to **strip EXIF/GPS data**, HEIC support for iPhone, and **background removal with `rembg`** queued one at a time to fit the Raspberry Pi's memory
+- Security-first: invitation-only access, **Argon2id**, per-account and per-IP lockout, CSRF, strict CSP with no inline code, photos served only after an ownership check
+- Hardened container (non-root, read-only, all capabilities dropped), self-hosted behind Traefik; 80+ automated tests
+
+`Python` `FastAPI` `SQLAlchemy` `HTMX` `SQLite` `Docker`
+
 #### 🔥 [HabitForge](https://github.com/005Jan/HabitForge): self-hosted habit-tracking PWA
 A multi-user habit tracker installable on mobile and fully functional offline.
 - Real **Web Push (VAPID)** with a prioritised reminder system: streak at risk, last chance and weekly summary, at most one notification per hour
