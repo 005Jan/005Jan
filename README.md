@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>IT Systems Technician · ASIX Student · Barcelona</b><br>
-  Windows infrastructure & process automation at NeodataMeat · self-hosted infrastructure and applications in my own time
+  Windows infrastructure & process automation at NeodataMeat · self-hosted infrastructure in my own time
 </p>
 
 <p align="center">
@@ -17,8 +17,7 @@
 
 I'm a systems technician working in a corporate environment, focused on **Windows Server, Active Directory
 and process automation with the Microsoft Power Platform**. In my own time I run a small self-hosted
-infrastructure on Linux and build complete applications on top of it, from the data model to
-deployment, with a focus on security, backups and keeping things running.
+infrastructure on Linux, with a focus on security, backups and keeping things running.
 
 - 🖥️ **Junior Systems Technician at NeodataMeat**: infrastructure, ERP/CRM administration and internal automation
 - 🎓 Studying the **Higher Degree in ASIX** (Network Systems Administration) at Salesians Sarrià, Barcelona
