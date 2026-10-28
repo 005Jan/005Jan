@@ -43,6 +43,19 @@ and process automation with the Microsoft Power Platform**.
 
 ---
 
+### Projects
+
+#### 🧠 Kovia: multi-user AI personal assistant
+A web app and installable PWA where users manage expenses, calendar, habits, reminders, nutrition and news
+by talking to an **AI agent with 23 tools**, in text or by voice.
+- **Multi-tenant by design:** per-user data isolation enforced in PostgreSQL with **Row-Level Security**
+- Agent loop on **Claude (AWS Bedrock)** with SSE streaming and prompt caching; **Whisper** transcription; receipt-to-expense with vision
+- **Background workers** for reminders, cron tasks and a personalised morning briefing via Web Push
+
+`Next.js` `React` `TypeScript` `Fastify` `Supabase` `Claude (Bedrock)` `Docker`
+
+---
+
 ### Tech Stack
 
 **Systems & Infrastructure**<br>
