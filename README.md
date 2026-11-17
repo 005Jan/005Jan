@@ -57,7 +57,20 @@ By evening I'm studying the **Higher Degree in ASIX** (Network Systems Administr
 
 ---
 
-### 🚀 Side project
+### 🚀 Side projects
+
+#### 🌱 Sulfata: crop protection products, in your pocket
+A mobile app for farmers and agronomists: pick a **crop and a pest** and see which plant protection products are
+authorised in Spain, with dose, pre-harvest interval and conditions. Works **fully offline**, right in the field.
+Live on both stores, built and published by me, from idea to store review.
+- Built on the **official public register** of the Spanish Ministry of Agriculture, packaged as an on-device SQLite database
+- A **weekly GitHub Actions pipeline** downloads the register, checks it and ships a fresh database as a release
+- Spanish and Catalan, Pro subscription with harvest-interval calendar and withdrawal alerts
+
+`Expo` `React Native` `TypeScript` `SQLite` `RevenueCat` `Sentry` `GitHub Actions`
+
+<a href="https://apps.apple.com/es/app/sulfata-fitosanitarios/id6824568693?pt=129629052&ct=github&mt=8"><img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=appstore&logoColor=white" alt="App Store"/></a>
+<a href="https://play.google.com/store/apps/details?id=com.jcaapps.sulfata&referrer=utm_source%3Dgithub%26utm_medium%3Dprofile"><img src="https://img.shields.io/badge/Google_Play-414141?style=flat&logo=googleplay&logoColor=white" alt="Google Play"/></a>
 
 #### 🧠 Kovia: multi-user AI personal assistant
 A web app and installable PWA where you manage expenses, calendar, habits, reminders, nutrition and news
@@ -107,6 +120,7 @@ just by **talking to an AI agent with 23 tools**, in text or by voice.
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+![Expo](https://img.shields.io/badge/Expo_/_React_Native-000020?style=flat&logo=expo&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS_Bedrock-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white)
 ![Azure](https://img.shields.io/badge/Azure_(basic)-0078D4?style=flat&logo=microsoftazure&logoColor=white)
