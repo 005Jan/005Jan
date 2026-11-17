@@ -15,7 +15,7 @@
 PS C:\> Get-ADUser -Identity jan.camps -Properties *
 
 Name         : Jan Camps Atmetller
-Title        : Junior Systems Technician @ NeodataMeat
+Title        : Junior Systems Technician @ Neodatameat
 Location     : Barcelona
 Education    : CFGS ASIX (in progress) · Salesians Sarrià
 Focus        : {Windows Server, Active Directory, Power Platform, Networking}
@@ -41,12 +41,12 @@ By evening I'm studying the **Higher Degree in ASIX** (Network Systems Administr
 
 ### 🛠️ Where I've been
 
-**Junior Systems Technician**, NeodataMeat · *Mar 2025 – Present*
+**Junior Systems Technician**, Neodatameat · *Mar 2025 – Present*
 - Active Directory administration (users, groups, GPOs) and Windows Server maintenance
 - Process automation with Power Automate; administration of Microsoft Dynamics AX/BC and CRM
 - Virtualised environments, IT helpdesk and technical support
 
-**Systems Technician (DUAL internship)**, NeodataMeat · *Jun 2024 – Feb 2025*
+**Systems Technician (DUAL internship)**, Neodatameat · *Jun 2024 – Feb 2025*
 - Incident resolution, hardware setup and inventory, software deployment and maintenance
 - Documenting internal processes, so the next person doesn't have to guess
 
@@ -57,7 +57,7 @@ By evening I'm studying the **Higher Degree in ASIX** (Network Systems Administr
 
 ---
 
-### 🚀 Side projects
+### 🚀 Side project
 
 #### 🌱 Sulfata: crop protection products, in your pocket
 A mobile app for farmers and agronomists: pick a **crop and a pest** and see which plant protection products are
@@ -72,15 +72,6 @@ Live on both stores, built and published by me, from idea to store review.
 <a href="https://apps.apple.com/es/app/sulfata-fitosanitarios/id6824568693?pt=129629052&ct=github&mt=8"><img src="https://img.shields.io/badge/App_Store-0D96F6?style=flat&logo=appstore&logoColor=white" alt="App Store"/></a>
 <a href="https://play.google.com/store/apps/details?id=com.jcaapps.sulfata&referrer=utm_source%3Dgithub%26utm_medium%3Dprofile"><img src="https://img.shields.io/badge/Google_Play-414141?style=flat&logo=googleplay&logoColor=white" alt="Google Play"/></a>
 
-#### 🧠 Kovia: multi-user AI personal assistant
-A web app and installable PWA where you manage expenses, calendar, habits, reminders, nutrition and news
-just by **talking to an AI agent with 23 tools**, in text or by voice.
-- **Multi-tenant by design:** per-user data isolation enforced in PostgreSQL with **Row-Level Security**
-- Agent loop on **Claude (AWS Bedrock)** with SSE streaming and prompt caching; **Whisper** transcription; snap a receipt and it becomes an expense
-- **Background workers** for reminders, scheduled tasks and a personalised morning briefing via Web Push
-
-`Next.js` `React` `TypeScript` `Fastify` `Supabase` `Claude (Bedrock)` `Docker`
-
 ---
 
 ### 🧰 Toolbox
@@ -94,8 +85,11 @@ just by **talking to an AI agent with 23 tools**, in text or by voice.
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=flat&logo=proxmox&logoColor=white)
 ![VMware](https://img.shields.io/badge/VMware-607078?style=flat&logo=vmware&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![IIS](https://img.shields.io/badge/IIS-5E5E5E?style=flat&logo=microsoft&logoColor=white)
 ![Traefik](https://img.shields.io/badge/Traefik-24A1C1?style=flat&logo=traefikproxy&logoColor=white)
 ![WireGuard](https://img.shields.io/badge/WireGuard-88171A?style=flat&logo=wireguard&logoColor=white)
+![VPN](https://img.shields.io/badge/VPN-4B5563?style=flat&logo=openvpn&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat&logo=wireshark&logoColor=white)
 ![Fortinet](https://img.shields.io/badge/FortiGate-EE3124?style=flat&logo=fortinet&logoColor=white)
 
 **Business Platforms & Automation**<br>
@@ -104,6 +98,7 @@ just by **talking to an AI agent with 23 tools**, in text or by voice.
 ![Power Apps](https://img.shields.io/badge/Power_Apps-742774?style=flat&logo=powerapps&logoColor=white)
 ![Dynamics](https://img.shields.io/badge/Dynamics_AX/BC/CRM-002050?style=flat&logo=dynamics365&logoColor=white)
 ![UiPath](https://img.shields.io/badge/UiPath-FA4616?style=flat&logo=uipath&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)
 ![Microsoft 365](https://img.shields.io/badge/Microsoft_365-D83B01?style=flat&logo=microsoft&logoColor=white)
 
 **Databases**<br>
@@ -138,6 +133,7 @@ Nothing goes to production that I haven't understood first.
 
 **Cybersecurity:** FortiGate 7.6 Operator · Getting Started in Cybersecurity 3.0 · Technical Introduction to Cybersecurity 3.0 ·
 Introduction to the Threat Landscape 3.0 (Fortinet) · Ethical Hacking (Salesians Sarrià)<br>
+**AI:** Claude Code in Action (Anthropic)<br>
 **Other:** Internet of Things (IoT) · Power BI · Microsoft Copilot · Google: AI and Productivity · ChatGPT Fundamentals (Santander Open Academy)
 
 ---
