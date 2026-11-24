@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Jan 👋</h1>
+<h1 align="center">Hi, I'm Jan</h1>
 
 <p align="center">
   <b>IT Systems Technician · ASIX Student · Barcelona</b><br>
@@ -27,7 +27,7 @@ Coffee       : Required
 
 ---
 
-### 🧑‍💻 What I do
+### What I do
 
 By day I'm a **systems technician in a corporate environment**: users, groups and GPOs in Active Directory,
 Windows Server, ERP/CRM administration and a healthy amount of helpdesk.
@@ -39,7 +39,7 @@ By evening I'm studying the **Higher Degree in ASIX** (Network Systems Administr
 
 ---
 
-### 🛠️ Where I've been
+### Where I've been
 
 **Junior Systems Technician**, Neodatameat · *Mar 2025 – Present*
 - Active Directory administration (users, groups, GPOs) and Windows Server maintenance
@@ -50,16 +50,16 @@ By evening I'm studying the **Higher Degree in ASIX** (Network Systems Administr
 - Incident resolution, hardware setup and inventory, software deployment and maintenance
 - Documenting internal processes, so the next person doesn't have to guess
 
-### 🎓 Where I've learnt it
+### Where I've learnt it
 
 - **CFGS ASIX**: Network Computer Systems Administration · Salesians Sarrià · *in progress*
 - **CFGM SMX**: Microcomputer Systems and Networks · *2023 – 2025*
 
 ---
 
-### 🚀 Side project
+### Side project
 
-#### 🌱 Sulfata: crop protection products, in your pocket
+#### Sulfata: crop protection products, in your pocket
 A mobile app for farmers and agronomists: pick a **crop and a pest** and see which plant protection products are
 authorised in Spain, with dose, pre-harvest interval and conditions. Works **fully offline**, right in the field.
 Live on both stores, built and published by me, from idea to store review.
@@ -74,7 +74,7 @@ Live on both stores, built and published by me, from idea to store review.
 
 ---
 
-### 🧰 Toolbox
+### Toolbox
 
 **Systems & Infrastructure**<br>
 ![Windows Server](https://img.shields.io/badge/Windows_Server-0078D6?style=flat&logo=windows&logoColor=white)
@@ -122,14 +122,14 @@ Live on both stores, built and published by me, from idea to store review.
 
 ---
 
-### 🤖 How I use AI
+### How I use AI
 
 I work with AI coding agents (like Claude Code) as a very fast pair: they draft, I review, test and decide.
 Nothing goes to production that I haven't understood first.
 
 ---
 
-### 📜 Courses & Certifications
+### Courses & Certifications
 
 **Cybersecurity:** FortiGate 7.6 Operator · Getting Started in Cybersecurity 3.0 · Technical Introduction to Cybersecurity 3.0 ·
 Introduction to the Threat Landscape 3.0 (Fortinet) · Ethical Hacking (Salesians Sarrià)<br>
@@ -140,5 +140,5 @@ Introduction to the Threat Landscape 3.0 (Fortinet) · Ethical Hacking (Salesian
 
 <p align="center">
   <i>Open to opportunities in systems administration, infrastructure and automation.<br>
-  If it can be automated, let's talk. If it can't, let's talk anyway. ☕</i>
+  If it can be automated, let's talk. If it can't, let's talk anyway.</i>
 </p>
